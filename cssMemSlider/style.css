@@ -1,6 +1,6 @@
-* {
+/* * {
     outline: red dashed 1px;
-}
+} */
 
 * {
     margin: 0;
@@ -10,7 +10,7 @@
 
 body {
     background-color: rgb(80, 93, 100);
-
+    margin: 0;
 }
 
 input[name="r"] {
@@ -29,12 +29,14 @@ input[name="r"] {
     padding: 0 2rem;
     width: 100%;
     height: 100vh;
-
-
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .slider {
-    width: 50rem;
+    max-width: 40rem;
     height: 36rem;
     overflow: hidden;
     margin: 0 auto;
@@ -46,6 +48,7 @@ input[name="r"] {
     width: 400%;
     height: 86%;
     display: flex;
+
     transition: all .5s ease;
 }
 
@@ -56,8 +59,8 @@ input[name="r"] {
 }
 
 .item img {
-    width: 50rem;
-    height: 30rem;
+    max-width: 40rem;
+    max-height: 30rem;
 }
 
 .slider-content {
@@ -78,7 +81,7 @@ input[name="r"] {
 }
 
 .slider-nav {
-    width: 100%;
+    max-width: 100%;
     display: flex;
     justify-content: flex-end;
 }
@@ -102,8 +105,12 @@ input[name="r"] {
 .slider-nav-item:hover {
     background-color: #fff;
     transform: scale(1.1);
+
 }
 
+.slider-nav-item:active {
+    opacity: .5;
+}
 
 
 #r1:checked~.slider .slider-items .s1,
@@ -145,13 +152,23 @@ input[name="r"] {
     background-color: #fff;
 }
 
+@media (max-width: 700px) {
+    .container {
+        padding: 0;
+        min-width: 10rem;
+    }
 
+    .slider-nav {
+        justify-content: center;
+    }
+
+}
 
 
 /* 
 делать тайм стемп через баш
 git commit -m "init: start cssMemSlider-task `LANG=en_EN date +'(%a, %b %d, %Y %r)'`"
- */
+ 
 
 
 
