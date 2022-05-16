@@ -86,7 +86,7 @@ input[name="r"] {
 }
 
 .bullet {
-    margin: -0.5rem;
+    margin: -0.6rem;
     height: 2rem;
     width: 2rem;
 }
@@ -163,6 +163,8 @@ input[name="r"] {
     .slider-text {
         font-size: 1rem;
     }
+
+
 }
 
 @media (max-width: 425px) {
@@ -182,6 +184,10 @@ input[name="r"] {
 
     .slider-text {
         font-size: 0.9rem;
+    }
+
+    .bullet {
+        margin: -0.7rem;
     }
 
 }
