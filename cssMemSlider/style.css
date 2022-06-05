@@ -28,7 +28,7 @@ input[name="r"] {
 }
 
 .slider {
-    max-width: 55rem;
+    max-width: 50rem;
     overflow: hidden;
     margin: 1rem auto;
 
@@ -48,7 +48,7 @@ input[name="r"] {
 }
 
 .item img {
-    max-width: 55rem;
+    max-width: 50rem;
     width: 100%;
 }
 
